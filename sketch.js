@@ -6,7 +6,7 @@ let rows = 10;
 let font;
 
 function preload() {
-  font = loadFont("./assets/InputMonoCondensed-Light.ttf");
+  font = loadFont("./assets/TAN-BUSTER.otf");
 }
 
 //
@@ -28,7 +28,7 @@ function draw() {
   let angle = 360 / columns;
   let diameter = textSize();
 
-  fill("white");
+  fill("#FF1493");
 
   rotateY(-frameCount);
   for (let i = 0; i < columns; i++) {
@@ -40,7 +40,7 @@ function draw() {
       const m = map(a, -1, 1, 0, textSize());
       push();
       translate(m, textSize() * (j - rows / 2), 0);
-      text("Ciao", 0, 0);
+      text("hello", 0, 0);
       pop();
     }
     pop();
